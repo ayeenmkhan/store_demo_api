@@ -1,7 +1,6 @@
 const express= require('express');
 const router= express.Router();
 const { getProduct, addProduct, deleteProduct, updateProduct }= require('../../controller/product/product');
-const { update } = require('../../model/users');
 
 router.route('/')
 .get(getProduct)
