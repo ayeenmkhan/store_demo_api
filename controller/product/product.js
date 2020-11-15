@@ -1,5 +1,4 @@
 const Product = require('../../model/product');
-const bcrypt = require('bcrypt');
 
 exports.addProduct = async (req, res, next) => {
     try {
