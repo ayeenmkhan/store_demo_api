@@ -6,17 +6,17 @@ const userRegisterSchema= new mogoose.Schema({
         trim:true,
         required:[true,'Please Add Some Text']
     },
-    contact_number:{
-        type:Number,
-        required:[true,'Please add a number']
-    },
+    // contact_number:{
+    //     type:Number,
+    //     required:[true,'Please add a number']
+    // },
     email_id:{
         type:String,
         required:[true,'Please add valid email']
     },
     user_type:{
         type:String,
-        required:[true,'Please add valid email']
+        default:0
     },
     username:{
         type:String,
